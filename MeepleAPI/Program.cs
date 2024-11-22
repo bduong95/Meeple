@@ -28,6 +28,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IGamesRepository, GamesRepository>();
+builder.Services.AddScoped<IUsersRepository, UsersRepository>();
 
 
 // Register AutoMapper

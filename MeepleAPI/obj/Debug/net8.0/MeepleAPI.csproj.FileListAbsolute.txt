@@ -40,3 +40,4 @@ C:\Users\BrianMacM2\source\repos\MeepleAPI\obj\Debug\net8.0\MeepleAPI.genruntime
 C:\Users\BrianMacM2\source\repos\MeepleAPI\obj\Debug\net8.0\ref\MeepleAPI.dll
 C:\Users\BrianMacM2\source\repos\MeepleAPI\bin\Debug\net8.0\AutoMapper.dll
 C:\Users\BrianMacM2\source\repos\MeepleAPI\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\BrianMacM2\source\repos\MeepleAPI\obj\Debug\net8.0\MeepleAPI.sourcelink.json
