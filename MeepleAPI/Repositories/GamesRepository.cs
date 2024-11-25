@@ -20,23 +20,73 @@ namespace MeepleAPI.Repositories
         {
             var search = _gamesTable.Scan(new ScanFilter());
             var documents = await search.GetNextSetAsync();
-            return documents.Select(doc => new Game
-            {
-                GameId = doc["GameId"],
-                Name = doc["Name"],
-                Genre = doc["Genre"],
-                DifficultyLevel = doc["DifficultyLevel"],
-                PlayStyle = doc["PlayStyle"],
-                Players = int.Parse(doc["Players"]),
-                BoardGameArenaRating = double.Parse(doc["BoardGameArenaRating"])
-            });
+            return ConvertDocumentsToGames(documents);
         }
 
         public async Task<Game> GetGameByIdAsync(string gameId)
         {
             var document = await _gamesTable.GetItemAsync(gameId);
-            if (document == null) return null;
+            return document == null ? null : ConvertDocumentToGame(document);
+        }
 
+        public async Task AddGameAsync(Game game)
+        {
+            var document = ConvertGameToDocument(game);
+            await _gamesTable.PutItemAsync(document);
+        }
+
+        public async Task UpdateGameAsync(string gameId, Game game)
+        {
+            var document = await _gamesTable.GetItemAsync(gameId);
+            if (document != null)
+            {
+                document = ConvertGameToDocument(game);
+                await _gamesTable.PutItemAsync(document);
+            }
+        }
+
+        public async Task DeleteGameAsync(string gameId)
+        {
+            await _gamesTable.DeleteItemAsync(gameId);
+        }
+
+        public async Task<IEnumerable<Game>> GetFilteredGamesAsync(string? genre, string? difficultyLevel, string? sortBy)
+        {
+            var scanFilter = new ScanFilter();
+
+            // Add filtering conditions
+            if (!string.IsNullOrEmpty(genre))
+            {
+                scanFilter.AddCondition("Genre", ScanOperator.Equal, genre);
+            }
+
+            if (!string.IsNullOrEmpty(difficultyLevel))
+            {
+                scanFilter.AddCondition("DifficultyLevel", ScanOperator.Equal, difficultyLevel);
+            }
+
+            // Perform the scan
+            var search = _gamesTable.Scan(scanFilter);
+            var documents = await search.GetNextSetAsync();
+            var games = ConvertDocumentsToGames(documents);
+
+            // Apply sorting if specified
+            return sortBy?.ToLower() switch
+            {
+                "rating" => games.OrderByDescending(g => g.BoardGameArenaRating),
+                "players" => games.OrderByDescending(g => g.Players),
+                _ => games
+            };
+        }
+
+        // Helper methods to convert between Game and Document
+        private IEnumerable<Game> ConvertDocumentsToGames(IEnumerable<Document> documents)
+        {
+            return documents.Select(doc => ConvertDocumentToGame(doc));
+        }
+
+        private Game ConvertDocumentToGame(Document document)
+        {
             return new Game
             {
                 GameId = document["GameId"],
@@ -49,9 +99,9 @@ namespace MeepleAPI.Repositories
             };
         }
 
-        public async Task AddGameAsync(Game game)
+        private Document ConvertGameToDocument(Game game)
         {
-            var document = new Document
+            return new Document
             {
                 ["GameId"] = game.GameId,
                 ["Name"] = game.Name,
@@ -61,29 +111,7 @@ namespace MeepleAPI.Repositories
                 ["Players"] = game.Players,
                 ["BoardGameArenaRating"] = game.BoardGameArenaRating
             };
-
-            await _gamesTable.PutItemAsync(document);
-        }
-
-        public async Task UpdateGameAsync(string gameId, Game game)
-        {
-            var document = await _gamesTable.GetItemAsync(gameId);
-            if (document != null)
-            {
-                document["Name"] = game.Name;
-                document["Genre"] = game.Genre;
-                document["DifficultyLevel"] = game.DifficultyLevel;
-                document["PlayStyle"] = game.PlayStyle;
-                document["Players"] = game.Players;
-                document["BoardGameArenaRating"] = game.BoardGameArenaRating;
-
-                await _gamesTable.UpdateItemAsync(document);
-            }
-        }
-
-        public async Task DeleteGameAsync(string gameId)
-        {
-            await _gamesTable.DeleteItemAsync(gameId);
         }
     }
+
 }

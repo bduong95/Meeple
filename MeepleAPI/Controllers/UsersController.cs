@@ -1,4 +1,5 @@
-﻿using MeepleAPI.Models; // Import the User model namespace
+﻿using MeepleAPI.DTOs;
+using MeepleAPI.Models; // Import the User model namespace
 using MeepleAPI.Repositories; // Import the UsersRepository and IUsersRepository namespace
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
@@ -72,5 +73,26 @@ namespace MeepleAPI.Controllers
             await _usersRepository.DeleteUserAsync(id);
             return NoContent();
         }
+
+        [HttpPost("login")]
+        public async Task<IActionResult> Login([FromBody] LoginDto loginDto)
+        {
+            // Fetch user from the database
+            var user = await _usersRepository.GetUserByEmailAsync(loginDto.Email);
+            if (user == null)
+            {
+                return Unauthorized("Invalid email or password.");
+            }
+
+            // Compare passwords directly (since you’re not hashing passwords)
+            if (user.Password != loginDto.Password)
+            {
+                return Unauthorized("Invalid email or password.");
+            }
+
+            // Return a success response
+            return Ok(new { Message = "Login successful!", UserId = user.UserId });
+        }
+
     }
 }

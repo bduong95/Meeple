@@ -40,5 +40,19 @@ namespace MeepleAPI.Repositories
         {
             await _context.DeleteAsync<User>(userId);
         }
+
+        public async Task<User> GetUserByEmailAsync(string email)
+        {
+            var scanConditions = new List<ScanCondition>
+            {
+                new ScanCondition("Email", Amazon.DynamoDBv2.DocumentModel.ScanOperator.Equal, email)
+            };
+
+            var users = await _context.ScanAsync<User>(scanConditions).GetRemainingAsync();
+
+            // Assuming email is unique, return the first user found or null
+            return users.FirstOrDefault();
+        }
+
     }
 }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\BrianMacM2\\source\\repos\\MeepleAPI\\MeepleAPI.csproj": {}
+    "C:\\Users\\Brian\\Desktop\\Meepl1\\Meeple\\MeepleAPI\\MeepleAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\BrianMacM2\\source\\repos\\MeepleAPI\\MeepleAPI.csproj": {
+    "C:\\Users\\Brian\\Desktop\\Meepl1\\Meeple\\MeepleAPI\\MeepleAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\BrianMacM2\\source\\repos\\MeepleAPI\\MeepleAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Brian\\Desktop\\Meepl1\\Meeple\\MeepleAPI\\MeepleAPI.csproj",
         "projectName": "MeepleAPI",
-        "projectPath": "C:\\Users\\BrianMacM2\\source\\repos\\MeepleAPI\\MeepleAPI.csproj",
-        "packagesPath": "C:\\Users\\BrianMacM2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\BrianMacM2\\source\\repos\\MeepleAPI\\obj\\",
+        "projectPath": "C:\\Users\\Brian\\Desktop\\Meepl1\\Meeple\\MeepleAPI\\MeepleAPI.csproj",
+        "packagesPath": "C:\\Users\\Brian\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Brian\\Desktop\\Meepl1\\Meeple\\MeepleAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\BrianMacM2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Brian\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
