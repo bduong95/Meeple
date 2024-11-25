@@ -84,3 +84,46 @@ C:\Users\Brian\Desktop\Meepl1\Meeple\MeepleAPI\obj\Debug\net8.0\refint\MeepleAPI
 C:\Users\Brian\Desktop\Meepl1\Meeple\MeepleAPI\obj\Debug\net8.0\MeepleAPI.pdb
 C:\Users\Brian\Desktop\Meepl1\Meeple\MeepleAPI\obj\Debug\net8.0\MeepleAPI.genruntimeconfig.cache
 C:\Users\Brian\Desktop\Meepl1\Meeple\MeepleAPI\obj\Debug\net8.0\ref\MeepleAPI.dll
+C:\Users\kdoc_\Documents\Centennial\Sem 9\API Engineering\Meeple\MeepleAPI\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\kdoc_\Documents\Centennial\Sem 9\API Engineering\Meeple\MeepleAPI\bin\Debug\net8.0\appsettings.json
+C:\Users\kdoc_\Documents\Centennial\Sem 9\API Engineering\Meeple\MeepleAPI\bin\Debug\net8.0\MeepleAPI.exe
+C:\Users\kdoc_\Documents\Centennial\Sem 9\API Engineering\Meeple\MeepleAPI\bin\Debug\net8.0\MeepleAPI.deps.json
+C:\Users\kdoc_\Documents\Centennial\Sem 9\API Engineering\Meeple\MeepleAPI\bin\Debug\net8.0\MeepleAPI.runtimeconfig.json
+C:\Users\kdoc_\Documents\Centennial\Sem 9\API Engineering\Meeple\MeepleAPI\bin\Debug\net8.0\MeepleAPI.dll
+C:\Users\kdoc_\Documents\Centennial\Sem 9\API Engineering\Meeple\MeepleAPI\bin\Debug\net8.0\MeepleAPI.pdb
+C:\Users\kdoc_\Documents\Centennial\Sem 9\API Engineering\Meeple\MeepleAPI\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\kdoc_\Documents\Centennial\Sem 9\API Engineering\Meeple\MeepleAPI\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\kdoc_\Documents\Centennial\Sem 9\API Engineering\Meeple\MeepleAPI\bin\Debug\net8.0\AWSSDK.Core.dll
+C:\Users\kdoc_\Documents\Centennial\Sem 9\API Engineering\Meeple\MeepleAPI\bin\Debug\net8.0\AWSSDK.DynamoDBv2.dll
+C:\Users\kdoc_\Documents\Centennial\Sem 9\API Engineering\Meeple\MeepleAPI\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
+C:\Users\kdoc_\Documents\Centennial\Sem 9\API Engineering\Meeple\MeepleAPI\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\kdoc_\Documents\Centennial\Sem 9\API Engineering\Meeple\MeepleAPI\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\kdoc_\Documents\Centennial\Sem 9\API Engineering\Meeple\MeepleAPI\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\kdoc_\Documents\Centennial\Sem 9\API Engineering\Meeple\MeepleAPI\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\kdoc_\Documents\Centennial\Sem 9\API Engineering\Meeple\MeepleAPI\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\kdoc_\Documents\Centennial\Sem 9\API Engineering\Meeple\MeepleAPI\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\kdoc_\Documents\Centennial\Sem 9\API Engineering\Meeple\MeepleAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\kdoc_\Documents\Centennial\Sem 9\API Engineering\Meeple\MeepleAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\kdoc_\Documents\Centennial\Sem 9\API Engineering\Meeple\MeepleAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\kdoc_\Documents\Centennial\Sem 9\API Engineering\Meeple\MeepleAPI\obj\Debug\net8.0\MeepleAPI.csproj.AssemblyReference.cache
+C:\Users\kdoc_\Documents\Centennial\Sem 9\API Engineering\Meeple\MeepleAPI\obj\Debug\net8.0\MeepleAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kdoc_\Documents\Centennial\Sem 9\API Engineering\Meeple\MeepleAPI\obj\Debug\net8.0\MeepleAPI.AssemblyInfoInputs.cache
+C:\Users\kdoc_\Documents\Centennial\Sem 9\API Engineering\Meeple\MeepleAPI\obj\Debug\net8.0\MeepleAPI.AssemblyInfo.cs
+C:\Users\kdoc_\Documents\Centennial\Sem 9\API Engineering\Meeple\MeepleAPI\obj\Debug\net8.0\MeepleAPI.csproj.CoreCompileInputs.cache
+C:\Users\kdoc_\Documents\Centennial\Sem 9\API Engineering\Meeple\MeepleAPI\obj\Debug\net8.0\MeepleAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\kdoc_\Documents\Centennial\Sem 9\API Engineering\Meeple\MeepleAPI\obj\Debug\net8.0\MeepleAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\kdoc_\Documents\Centennial\Sem 9\API Engineering\Meeple\MeepleAPI\obj\Debug\net8.0\MeepleAPI.sourcelink.json
+C:\Users\kdoc_\Documents\Centennial\Sem 9\API Engineering\Meeple\MeepleAPI\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\kdoc_\Documents\Centennial\Sem 9\API Engineering\Meeple\MeepleAPI\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\kdoc_\Documents\Centennial\Sem 9\API Engineering\Meeple\MeepleAPI\obj\Debug\net8.0\staticwebassets\msbuild.MeepleAPI.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\kdoc_\Documents\Centennial\Sem 9\API Engineering\Meeple\MeepleAPI\obj\Debug\net8.0\staticwebassets\msbuild.build.MeepleAPI.props
+C:\Users\kdoc_\Documents\Centennial\Sem 9\API Engineering\Meeple\MeepleAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.MeepleAPI.props
+C:\Users\kdoc_\Documents\Centennial\Sem 9\API Engineering\Meeple\MeepleAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.MeepleAPI.props
+C:\Users\kdoc_\Documents\Centennial\Sem 9\API Engineering\Meeple\MeepleAPI\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\kdoc_\Documents\Centennial\Sem 9\API Engineering\Meeple\MeepleAPI\obj\Debug\net8.0\scopedcss\bundle\MeepleAPI.styles.css
+C:\Users\kdoc_\Documents\Centennial\Sem 9\API Engineering\Meeple\MeepleAPI\obj\Debug\net8.0\MeepleAPI.csproj.Up2Date
+C:\Users\kdoc_\Documents\Centennial\Sem 9\API Engineering\Meeple\MeepleAPI\obj\Debug\net8.0\MeepleAPI.dll
+C:\Users\kdoc_\Documents\Centennial\Sem 9\API Engineering\Meeple\MeepleAPI\obj\Debug\net8.0\refint\MeepleAPI.dll
+C:\Users\kdoc_\Documents\Centennial\Sem 9\API Engineering\Meeple\MeepleAPI\obj\Debug\net8.0\MeepleAPI.pdb
+C:\Users\kdoc_\Documents\Centennial\Sem 9\API Engineering\Meeple\MeepleAPI\obj\Debug\net8.0\MeepleAPI.genruntimeconfig.cache
+C:\Users\kdoc_\Documents\Centennial\Sem 9\API Engineering\Meeple\MeepleAPI\obj\Debug\net8.0\ref\MeepleAPI.dll

@@ -13,9 +13,18 @@ builder.Services.AddSingleton<IAmazonDynamoDB>(sp =>
     var awsSecretKey = awsOptions["SecretKey"];
     var region = awsOptions["Region"];
 
+    // Debugging output to confirm credentials and region
+    Console.WriteLine($"AWS Access Key: {awsAccessKey}");
+    Console.WriteLine($"AWS Region: {region}");
+
+    if (string.IsNullOrWhiteSpace(region))
+    {
+        throw new ArgumentException("AWS Region is not configured properly.");
+    }
+
     var config = new AmazonDynamoDBConfig
     {
-        RegionEndpoint = Amazon.RegionEndpoint.GetBySystemName(region)
+        RegionEndpoint = Amazon.RegionEndpoint.GetBySystemName(region) // Validate region
     };
 
     return new AmazonDynamoDBClient(awsAccessKey, awsSecretKey, config);
@@ -41,7 +50,6 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IGamesRepository, GamesRepository>();
 builder.Services.AddScoped<IUsersRepository, UsersRepository>();
 builder.Services.AddScoped<ICollectionsRepository, CollectionsRepository>();
-
 
 // Register AutoMapper
 builder.Services.AddAutoMapper(typeof(AutoMapperProfile));

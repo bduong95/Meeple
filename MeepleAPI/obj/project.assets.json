@@ -974,19 +974,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Brian\\.nuget\\packages\\": {}
+    "C:\\Users\\kdoc_\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Brian\\Desktop\\Meepl1\\Meeple\\MeepleAPI\\MeepleAPI.csproj",
+      "projectUniqueName": "C:\\Users\\kdoc_\\Documents\\Centennial\\Sem 9\\API Engineering\\Meeple\\MeepleAPI\\MeepleAPI.csproj",
       "projectName": "MeepleAPI",
-      "projectPath": "C:\\Users\\Brian\\Desktop\\Meepl1\\Meeple\\MeepleAPI\\MeepleAPI.csproj",
-      "packagesPath": "C:\\Users\\Brian\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Brian\\Desktop\\Meepl1\\Meeple\\MeepleAPI\\obj\\",
+      "projectPath": "C:\\Users\\kdoc_\\Documents\\Centennial\\Sem 9\\API Engineering\\Meeple\\MeepleAPI\\MeepleAPI.csproj",
+      "packagesPath": "C:\\Users\\kdoc_\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\kdoc_\\Documents\\Centennial\\Sem 9\\API Engineering\\Meeple\\MeepleAPI\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Brian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kdoc_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
