@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom'; // Import Link for navigation
 
 function CatalogPage() {
     const [games, setGames] = useState([]);
@@ -71,7 +72,10 @@ function CatalogPage() {
                 {games.length > 0 ? (
                     games.map((game) => (
                         <li key={game.gameId} style={{ marginBottom: '20px' }}>
-                            <h3>{game.name}</h3>
+                            <h3>
+                                {/* Add a Link to navigate to the Game Details page */}
+                                <Link to={`/games/${game.gameId}`}>{game.name}</Link>
+                            </h3>
                             <p>Genre: {game.genre}</p>
                             <p>Difficulty Level: {game.difficultyLevel}</p>
                             <p>Play Style: {game.playStyle}</p>

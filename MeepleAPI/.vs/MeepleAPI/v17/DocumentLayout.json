@@ -106,8 +106,7 @@
               "RelativeToolTip": "DTOs\\LoginDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T04:32:50.835Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-25T04:32:50.835Z"
             },
             {
               "$type": "Document",
@@ -119,8 +118,7 @@
               "RelativeToolTip": "DTOs\\GameDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T01:17:02.195Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T01:17:02.195Z"
             },
             {
               "$type": "Document",
@@ -132,8 +130,7 @@
               "RelativeToolTip": "Controllers\\GamesController.cs",
               "ViewState": "AgIAADEAAAAAAAAAAAA4wFcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T01:14:25.862Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T01:14:25.862Z"
             },
             {
               "$type": "Document",
@@ -145,8 +142,7 @@
               "RelativeToolTip": "Repositories\\IUsersRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T00:15:51.338Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T00:15:51.338Z"
             },
             {
               "$type": "Document",
@@ -171,8 +167,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAAIwC8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T01:30:20.718Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T01:30:20.718Z"
             },
             {
               "$type": "Document",
@@ -184,8 +179,7 @@
               "RelativeToolTip": "Models\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T00:06:20.667Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T00:06:20.667Z"
             },
             {
               "$type": "Document",
@@ -197,8 +191,7 @@
               "RelativeToolTip": "Controllers\\UsersController.cs",
               "ViewState": "AgIAADsAAAAAAAAAAAAmwGEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T00:10:46.364Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T00:10:46.364Z"
             },
             {
               "$type": "Document",
@@ -210,8 +203,7 @@
               "RelativeToolTip": "Repositories\\GamesRepository.cs",
               "ViewState": "AgIAAE8AAAAAAAAAAAAmwHUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T01:22:51.149Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T01:22:51.149Z"
             },
             {
               "$type": "Document",
@@ -223,8 +215,7 @@
               "RelativeToolTip": "Repositories\\IGamesRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T01:18:38.469Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T01:18:38.469Z"
             },
             {
               "$type": "Document",

@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage';
 import CatalogPage from './pages/CatalogPage';
 import NavBar from './components/NavBar';
 import LoginPage from './pages/LoginPage';
+import GameDetailsPage from './pages/GameDetailsPage';
 
 function App() {
   return (
@@ -11,9 +12,9 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/catalog" element={<CatalogPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/catalog" element={<CatalogPage />} />
+        <Route path="/games/:gameId" element={<GameDetailsPage />} />
       </Routes>
     </Router>
   );
