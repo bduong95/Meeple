@@ -9,6 +9,7 @@ function CatalogPage() {
     const [genre, setGenre] = useState(''); // Filter by genre
     const [difficultyLevel, setDifficultyLevel] = useState(''); // Filter by difficulty
     const [sortBy, setSortBy] = useState(''); // Sort option
+    const [userId] = useState('U001'); // Hardcoded user ID for now
 
     useEffect(() => {
         const fetchGames = async () => {
@@ -28,12 +29,29 @@ function CatalogPage() {
         fetchGames();
     }, [genre, difficultyLevel, sortBy]); // Re-fetch when filters or sort option changes
 
+    const addToCollection = async (gameId) => {
+        try {
+            await axios.post(`https://localhost:7263/api/collections/${userId}/add/${gameId}`);
+            alert('Game added to your collection!');
+        } catch (err) {
+            console.error(err);
+            alert('Failed to add game to collection.');
+        }
+    };
+
     if (loading) return <p>Loading games...</p>;
     if (error) return <p style={{ color: 'red' }}>{error}</p>;
 
     return (
         <div>
             <h1>Game Catalog</h1>
+
+            {/* Navigation */}
+            <nav style={{ marginBottom: '20px' }}>
+                <Link to="/collection" style={{ marginRight: '10px', textDecoration: 'none', color: 'blue' }}>
+                    View My Collection
+                </Link>
+            </nav>
 
             {/* Filters */}
             <div style={{ marginBottom: '20px' }}>
@@ -81,6 +99,7 @@ function CatalogPage() {
                             <p>Play Style: {game.playStyle}</p>
                             <p>Players: {game.players}</p>
                             <p>Rating: {game.boardGameArenaRating}</p>
+                            <button onClick={() => addToCollection(game.gameId)}>Save to My Collection</button>
                         </li>
                     ))
                 ) : (

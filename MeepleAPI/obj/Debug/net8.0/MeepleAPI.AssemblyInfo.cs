@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MeepleAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f130fe4bf01c71c66b67551a7d07030be75ba8e5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18cbe3c23bc808effd35ad8f24e6a9fa258a4bbc")]
 [assembly: System.Reflection.AssemblyProductAttribute("MeepleAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MeepleAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

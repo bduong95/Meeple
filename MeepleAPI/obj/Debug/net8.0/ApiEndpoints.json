@@ -1,5 +1,73 @@
 [
   {
+    "ContainingType": "MeepleAPI.Controllers.CollectionsController",
+    "Method": "GetCollection",
+    "RelativePath": "api/Collections/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MeepleAPI.Models.Game, MeepleAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MeepleAPI.Controllers.CollectionsController",
+    "Method": "AddToCollection",
+    "RelativePath": "api/Collections/{userId}/add/{gameId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "gameId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MeepleAPI.Controllers.CollectionsController",
+    "Method": "RemoveFromCollection",
+    "RelativePath": "api/Collections/{userId}/remove/{gameId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "gameId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "MeepleAPI.Controllers.GamesController",
     "Method": "GetAllGames",
     "RelativePath": "api/Games",

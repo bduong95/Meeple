@@ -40,6 +40,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IGamesRepository, GamesRepository>();
 builder.Services.AddScoped<IUsersRepository, UsersRepository>();
+builder.Services.AddScoped<ICollectionsRepository, CollectionsRepository>();
+
 
 // Register AutoMapper
 builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
