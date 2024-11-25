@@ -11,5 +11,6 @@ namespace MeepleAPI.Repositories
         Task AddUserAsync(User user);
         Task UpdateUserAsync(string userId, User user);
         Task DeleteUserAsync(string userId);
+        Task<User> GetUserByEmailAsync(string email);
     }
 }

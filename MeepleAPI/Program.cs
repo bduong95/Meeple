@@ -21,15 +21,25 @@ builder.Services.AddSingleton<IAmazonDynamoDB>(sp =>
     return new AmazonDynamoDBClient(awsAccessKey, awsSecretKey, config);
 });
 
-// Add services to the container.
+// Add CORS configuration
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyMethod()
+              .AllowAnyHeader();
+    });
+});
 
+// Add services to the container.
 builder.Services.AddControllers();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IGamesRepository, GamesRepository>();
 builder.Services.AddScoped<IUsersRepository, UsersRepository>();
-
 
 // Register AutoMapper
 builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
@@ -42,6 +52,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+// Enable CORS middleware
+app.UseCors();
 
 app.UseHttpsRedirection();
 

@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Brian\\Desktop\\Meepl1\\Meeple\\MeepleAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F2F63044-7B60-4F0B-BF9F-EDEB6B2200DB}|MeepleAPI.csproj|c:\\users\\brian\\desktop\\meepl1\\meeple\\meepleapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2F63044-7B60-4F0B-BF9F-EDEB6B2200DB}|MeepleAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F2F63044-7B60-4F0B-BF9F-EDEB6B2200DB}|MeepleAPI.csproj|c:\\users\\brian\\desktop\\meepl1\\meeple\\meepleapi\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2F63044-7B60-4F0B-BF9F-EDEB6B2200DB}|MeepleAPI.csproj|solutionrelative:repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F63044-7B60-4F0B-BF9F-EDEB6B2200DB}|MeepleAPI.csproj|c:\\users\\brian\\desktop\\meepl1\\meeple\\meepleapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F63044-7B60-4F0B-BF9F-EDEB6B2200DB}|MeepleAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F2F63044-7B60-4F0B-BF9F-EDEB6B2200DB}|MeepleAPI.csproj|c:\\users\\brian\\desktop\\meepl1\\meeple\\meepleapi\\repositories\\iusersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,12 +23,12 @@
       "RelativeMoniker": "D:0:0:{F2F63044-7B60-4F0B-BF9F-EDEB6B2200DB}|MeepleAPI.csproj|solutionrelative:repositories\\gamesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2F63044-7B60-4F0B-BF9F-EDEB6B2200DB}|MeepleAPI.csproj|c:\\users\\brian\\desktop\\meepl1\\meeple\\meepleapi\\dtos\\gamedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2F63044-7B60-4F0B-BF9F-EDEB6B2200DB}|MeepleAPI.csproj|solutionrelative:dtos\\gamedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F2F63044-7B60-4F0B-BF9F-EDEB6B2200DB}|MeepleAPI.csproj|c:\\users\\brian\\desktop\\meepl1\\meeple\\meepleapi\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F63044-7B60-4F0B-BF9F-EDEB6B2200DB}|MeepleAPI.csproj|solutionrelative:dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2F63044-7B60-4F0B-BF9F-EDEB6B2200DB}|MeepleAPI.csproj|c:\\users\\brian\\desktop\\meepl1\\meeple\\meepleapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2F63044-7B60-4F0B-BF9F-EDEB6B2200DB}|MeepleAPI.csproj|solutionrelative:controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F2F63044-7B60-4F0B-BF9F-EDEB6B2200DB}|MeepleAPI.csproj|c:\\users\\brian\\desktop\\meepl1\\meeple\\meepleapi\\dtos\\gamedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F63044-7B60-4F0B-BF9F-EDEB6B2200DB}|MeepleAPI.csproj|solutionrelative:dtos\\gamedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F2F63044-7B60-4F0B-BF9F-EDEB6B2200DB}|MeepleAPI.csproj|c:\\users\\brian\\desktop\\meepl1\\meeple\\meepleapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,6 +41,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{F2F63044-7B60-4F0B-BF9F-EDEB6B2200DB}|MeepleAPI.csproj|c:\\users\\brian\\desktop\\meepl1\\meeple\\meepleapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2F63044-7B60-4F0B-BF9F-EDEB6B2200DB}|MeepleAPI.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F63044-7B60-4F0B-BF9F-EDEB6B2200DB}|MeepleAPI.csproj|c:\\users\\brian\\desktop\\meepl1\\meeple\\meepleapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F63044-7B60-4F0B-BF9F-EDEB6B2200DB}|MeepleAPI.csproj|solutionrelative:controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F2F63044-7B60-4F0B-BF9F-EDEB6B2200DB}|MeepleAPI.csproj|c:\\users\\brian\\desktop\\meepl1\\meeple\\meepleapi\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -62,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 16,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -94,15 +98,106 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\Brian\\Desktop\\Meepl1\\Meeple\\MeepleAPI\\DTOs\\LoginDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\Brian\\Desktop\\Meepl1\\Meeple\\MeepleAPI\\DTOs\\LoginDto.cs",
+              "RelativeToolTip": "DTOs\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T04:32:50.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GameDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Brian\\Desktop\\Meepl1\\Meeple\\MeepleAPI\\DTOs\\GameDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\GameDTO.cs",
+              "ToolTip": "C:\\Users\\Brian\\Desktop\\Meepl1\\Meeple\\MeepleAPI\\DTOs\\GameDTO.cs",
+              "RelativeToolTip": "DTOs\\GameDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T01:17:02.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GamesController.cs",
+              "DocumentMoniker": "C:\\Users\\Brian\\Desktop\\Meepl1\\Meeple\\MeepleAPI\\Controllers\\GamesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\GamesController.cs",
+              "ToolTip": "C:\\Users\\Brian\\Desktop\\Meepl1\\Meeple\\MeepleAPI\\Controllers\\GamesController.cs",
+              "RelativeToolTip": "Controllers\\GamesController.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAA4wFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T01:14:25.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IUsersRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Brian\\Desktop\\Meepl1\\Meeple\\MeepleAPI\\Repositories\\IUsersRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\IUsersRepository.cs",
+              "ToolTip": "C:\\Users\\Brian\\Desktop\\Meepl1\\Meeple\\MeepleAPI\\Repositories\\IUsersRepository.cs",
+              "RelativeToolTip": "Repositories\\IUsersRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T00:15:51.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Brian\\Desktop\\Meepl1\\Meeple\\MeepleAPI\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\Brian\\Desktop\\Meepl1\\Meeple\\MeepleAPI\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "Repositories\\UserRepository.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAYwDkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T00:09:57.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Brian\\Desktop\\Meepl1\\Meeple\\MeepleAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Brian\\Desktop\\Meepl1\\Meeple\\MeepleAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAIwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T01:30:20.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 9,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Brian\\Desktop\\Meepl1\\Meeple\\MeepleAPI\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
               "ToolTip": "C:\\Users\\Brian\\Desktop\\Meepl1\\Meeple\\MeepleAPI\\Models\\User.cs",
               "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-22T00:06:20.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\Brian\\Desktop\\Meepl1\\Meeple\\MeepleAPI\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\Brian\\Desktop\\Meepl1\\Meeple\\MeepleAPI\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Controllers\\UsersController.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAmwGEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T00:10:46.364Z",
               "EditorCaption": ""
             },
             {
@@ -133,20 +228,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "GameDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Brian\\Desktop\\Meepl1\\Meeple\\MeepleAPI\\DTOs\\GameDTO.cs",
-              "RelativeDocumentMoniker": "DTOs\\GameDTO.cs",
-              "ToolTip": "C:\\Users\\Brian\\Desktop\\Meepl1\\Meeple\\MeepleAPI\\DTOs\\GameDTO.cs",
-              "RelativeToolTip": "DTOs\\GameDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\Brian\\Desktop\\Meepl1\\Meeple\\MeepleAPI\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\Brian\\Desktop\\Meepl1\\Meeple\\MeepleAPI\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T01:17:02.195Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T01:08:48.438Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Game.cs",
               "DocumentMoniker": "C:\\Users\\Brian\\Desktop\\Meepl1\\Meeple\\MeepleAPI\\Models\\Game.cs",
               "RelativeDocumentMoniker": "Models\\Game.cs",
@@ -158,85 +252,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "GamesController.cs",
-              "DocumentMoniker": "C:\\Users\\Brian\\Desktop\\Meepl1\\Meeple\\MeepleAPI\\Controllers\\GamesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\GamesController.cs",
-              "ToolTip": "C:\\Users\\Brian\\Desktop\\Meepl1\\Meeple\\MeepleAPI\\Controllers\\GamesController.cs",
-              "RelativeToolTip": "Controllers\\GamesController.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAA4wFcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T01:14:25.862Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\Brian\\Desktop\\Meepl1\\Meeple\\MeepleAPI\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\Brian\\Desktop\\Meepl1\\Meeple\\MeepleAPI\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T01:08:48.438Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IUsersRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Brian\\Desktop\\Meepl1\\Meeple\\MeepleAPI\\Repositories\\IUsersRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\IUsersRepository.cs",
-              "ToolTip": "C:\\Users\\Brian\\Desktop\\Meepl1\\Meeple\\MeepleAPI\\Repositories\\IUsersRepository.cs",
-              "RelativeToolTip": "Repositories\\IUsersRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T00:15:51.338Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Brian\\Desktop\\Meepl1\\Meeple\\MeepleAPI\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\Brian\\Desktop\\Meepl1\\Meeple\\MeepleAPI\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "Repositories\\UserRepository.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAcwDEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T00:09:57.295Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Brian\\Desktop\\Meepl1\\Meeple\\MeepleAPI\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Brian\\Desktop\\Meepl1\\Meeple\\MeepleAPI\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAIwCkAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T01:30:20.718Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\Brian\\Desktop\\Meepl1\\Meeple\\MeepleAPI\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\Brian\\Desktop\\Meepl1\\Meeple\\MeepleAPI\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "Controllers\\UsersController.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAuwGEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T00:10:46.364Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "AutoMapperProfile.cs",
               "DocumentMoniker": "C:\\Users\\Brian\\Desktop\\Meepl1\\Meeple\\MeepleAPI\\Mappings\\AutoMapperProfile.cs",
               "RelativeDocumentMoniker": "Mappings\\AutoMapperProfile.cs",
@@ -248,7 +264,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "MeepleAPI.csproj",
               "DocumentMoniker": "C:\\Users\\Brian\\Desktop\\Meepl1\\Meeple\\MeepleAPI\\MeepleAPI.csproj",
               "RelativeDocumentMoniker": "MeepleAPI.csproj",

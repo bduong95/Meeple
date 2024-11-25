@@ -11,5 +11,8 @@ namespace MeepleAPI.Repositories
         Task AddGameAsync(Game game);
         Task UpdateGameAsync(string gameId, Game game);
         Task DeleteGameAsync(string gameId);
+        Task<IEnumerable<Game>> GetFilteredGamesAsync(string? genre, string? difficultyLevel, string? sortBy);
+
+
     }
 }

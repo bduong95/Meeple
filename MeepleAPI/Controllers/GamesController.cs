@@ -72,5 +72,16 @@ namespace MeepleAPI.Controllers
             await _gamesRepository.DeleteGameAsync(id);
             return NoContent();
         }
+
+        [HttpGet("filter")]
+        public async Task<ActionResult<IEnumerable<Game>>> GetFilteredGames(
+    [FromQuery] string? genre,
+    [FromQuery] string? difficultyLevel,
+    [FromQuery] string? sortBy)
+        {
+            var games = await _gamesRepository.GetFilteredGamesAsync(genre, difficultyLevel, sortBy);
+            return Ok(games);
+        }
+
     }
 }
