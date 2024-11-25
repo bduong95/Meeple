@@ -1,0 +1,68 @@
+/* NavBar Styles */
+
+.navbar {
+    background: linear-gradient(to right, #ff6600, #ffa31a);
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .navbar-logo {
+    width: 100px; /* Adjust the width of your logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between logo and menu */
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-link {
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.2s;
+  }
+  
+  .navbar-link:hover {
+    color: #333;
+    transform: scale(1.1);
+  }
+  
+  .navbar-link:active {
+    color: #ffcc00;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-links {
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 10px;
+    }
+  
+    .navbar-link {
+      font-size: 0.9rem;
+    }
+
+    .navbar-logo {
+        width: 120px; /* Adjust logo size for smaller screens */
+      }
+    
+  }
+
+  

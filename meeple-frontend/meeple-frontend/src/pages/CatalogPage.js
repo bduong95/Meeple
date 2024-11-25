@@ -1,20 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom'; // Import Link for navigation
+import { Link } from 'react-router-dom';
+import '../styles/CatalogPage.css'; // Import the CSS file
 
 function CatalogPage() {
     const [games, setGames] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState('');
-    const [genre, setGenre] = useState(''); // Filter by genre
-    const [difficultyLevel, setDifficultyLevel] = useState(''); // Filter by difficulty
-    const [sortBy, setSortBy] = useState(''); // Sort option
-    const [userId] = useState('U001'); // Hardcoded user ID for now
+    const [genre, setGenre] = useState('');
+    const [difficultyLevel, setDifficultyLevel] = useState('');
+    const [sortBy, setSortBy] = useState('');
+    const [userId] = useState('U001');
 
     useEffect(() => {
         const fetchGames = async () => {
             try {
-                // Call the filtering endpoint
                 const response = await axios.get('https://localhost:7263/api/games/filter', {
                     params: { genre, difficultyLevel, sortBy },
                 });
@@ -27,7 +27,7 @@ function CatalogPage() {
         };
 
         fetchGames();
-    }, [genre, difficultyLevel, sortBy]); // Re-fetch when filters or sort option changes
+    }, [genre, difficultyLevel, sortBy]);
 
     const addToCollection = async (gameId) => {
         try {
@@ -39,25 +39,23 @@ function CatalogPage() {
         }
     };
 
-    if (loading) return <p>Loading games...</p>;
-    if (error) return <p style={{ color: 'red' }}>{error}</p>;
+    if (loading) return <p className="loading-message">Loading games...</p>;
+    if (error) return <p className="error-message">{error}</p>;
 
     return (
-        <div>
-            <h1>Game Catalog</h1>
+        <div className="catalog-page">
+            <h1 className="catalog-title">Game Catalog</h1>
 
             {/* Navigation */}
-            <nav style={{ marginBottom: '20px' }}>
-                <Link to="/collection" style={{ marginRight: '10px', textDecoration: 'none', color: 'blue' }}>
-                    View My Collection
-                </Link>
+            <nav className="catalog-navigation">
+                <Link to="/collection" className="catalog-link">View My Collection</Link>
             </nav>
 
             {/* Filters */}
-            <div style={{ marginBottom: '20px' }}>
-                <label style={{ marginRight: '10px' }}>
+            <div className="filters">
+                <label>
                     Genre:
-                    <select value={genre} onChange={(e) => setGenre(e.target.value)} style={{ marginLeft: '10px' }}>
+                    <select value={genre} onChange={(e) => setGenre(e.target.value)}>
                         <option value="">All</option>
                         <option value="Strategy">Strategy</option>
                         <option value="Party">Party</option>
@@ -65,9 +63,9 @@ function CatalogPage() {
                     </select>
                 </label>
 
-                <label style={{ marginRight: '10px' }}>
+                <label>
                     Difficulty Level:
-                    <select value={difficultyLevel} onChange={(e) => setDifficultyLevel(e.target.value)} style={{ marginLeft: '10px' }}>
+                    <select value={difficultyLevel} onChange={(e) => setDifficultyLevel(e.target.value)}>
                         <option value="">All</option>
                         <option value="Easy">Easy</option>
                         <option value="Medium">Medium</option>
@@ -77,7 +75,7 @@ function CatalogPage() {
 
                 <label>
                     Sort By:
-                    <select value={sortBy} onChange={(e) => setSortBy(e.target.value)} style={{ marginLeft: '10px' }}>
+                    <select value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
                         <option value="">Default</option>
                         <option value="rating">Rating</option>
                         <option value="players">Players</option>
@@ -86,24 +84,25 @@ function CatalogPage() {
             </div>
 
             {/* Game List */}
-            <ul>
+            <ul className="game-list">
                 {games.length > 0 ? (
                     games.map((game) => (
-                        <li key={game.gameId} style={{ marginBottom: '20px' }}>
-                            <h3>
-                                {/* Add a Link to navigate to the Game Details page */}
-                                <Link to={`/games/${game.gameId}`}>{game.name}</Link>
+                        <li key={game.gameId} className="game-item">
+                            <h3 className="game-title">
+                                <Link to={`/games/${game.gameId}`} className="game-link">{game.name}</Link>
                             </h3>
                             <p>Genre: {game.genre}</p>
                             <p>Difficulty Level: {game.difficultyLevel}</p>
                             <p>Play Style: {game.playStyle}</p>
                             <p>Players: {game.players}</p>
                             <p>Rating: {game.boardGameArenaRating}</p>
-                            <button onClick={() => addToCollection(game.gameId)}>Save to My Collection</button>
+                            <button onClick={() => addToCollection(game.gameId)} className="save-button">
+                                Save to My Collection
+                            </button>
                         </li>
                     ))
                 ) : (
-                    <p>No games found matching the selected criteria.</p>
+                    <p className="no-games-message">No games found matching the selected criteria.</p>
                 )}
             </ul>
         </div>

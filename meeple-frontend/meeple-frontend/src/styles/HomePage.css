@@ -1,0 +1,53 @@
+/* Center the homepage content */
+.homepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background: linear-gradient(to right, #ffcc00, #ffa31a); /* Warm gradient */
+    color: #333; /* Dark text for contrast */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+/* Wrapper for content */
+.homepage-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    max-width: 500px;
+    width: 90%;
+}
+
+/* Styling the title */
+.homepage-title {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #ff6600; /* Bright accent color */
+}
+
+/* Subtitle below the title */
+.homepage-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+/* Call-to-action button */
+.homepage-button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for button */
+.homepage-button:hover {
+    background-color: #cc5200;
+}
+
