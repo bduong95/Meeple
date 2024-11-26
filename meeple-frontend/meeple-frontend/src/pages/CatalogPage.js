@@ -11,6 +11,16 @@ function CatalogPage() {
     const [difficultyLevel, setDifficultyLevel] = useState('');
     const [sortBy, setSortBy] = useState('');
     const [userId] = useState('U001');
+    const [showAddGameForm, setShowAddGameForm] = useState(false);
+    const [newGame, setNewGame] = useState({
+        name: '',
+        genre: '',
+        difficultyLevel: '',
+        players: 0,
+        boardGameArenaRating: 0.0,
+        playStyle: '',
+    });
+    
 
     useEffect(() => {
         const fetchGames = async () => {
@@ -39,6 +49,30 @@ function CatalogPage() {
         }
     };
 
+    const handleAddGame = async (e) => {
+        e.preventDefault();
+        try {
+            await axios.post('https://localhost:7263/api/games', newGame);
+            alert('Game added successfully!');
+            setShowAddGameForm(false);
+            setNewGame({
+                name: '',
+                genre: '',
+                difficultyLevel: '',
+                players: 0,
+                boardGameArenaRating: 0.0,
+            });
+            // Refresh the game list
+            const response = await axios.get('https://localhost:7263/api/games/filter', {
+                params: { genre, difficultyLevel, sortBy },
+            });
+            setGames(response.data);
+        } catch (err) {
+            console.error(err);
+            alert('Failed to add game.');
+        }
+    };
+
     if (loading) return <p className="loading-message">Loading games...</p>;
     if (error) return <p className="error-message">{error}</p>;
 
@@ -49,7 +83,82 @@ function CatalogPage() {
             {/* Navigation */}
             <nav className="catalog-navigation">
                 <Link to="/collection" className="catalog-link">View My Collection</Link>
+                <button onClick={() => setShowAddGameForm(true)} className="add-game-button">
+                    Add New Game
+                </button>
             </nav>
+
+            {/* Add Game Form */}
+            {showAddGameForm && (
+                <div className="add-game-form-container">
+                    <form onSubmit={handleAddGame} className="add-game-form">
+                        <h2>Add a New Game</h2>
+                        <label>
+                            Name:
+                            <input
+                                type="text"
+                                value={newGame.name}
+                                onChange={(e) => setNewGame({ ...newGame, name: e.target.value })}
+                                required
+                            />
+                        </label>
+                        <label>
+                            Genre:
+                            <input
+                                type="text"
+                                value={newGame.genre}
+                                onChange={(e) => setNewGame({ ...newGame, genre: e.target.value })}
+                                required
+                            />
+                        </label>
+                        <label>
+                            Difficulty Level:
+                            <input
+                                type="text"
+                                value={newGame.difficultyLevel}
+                                onChange={(e) => setNewGame({ ...newGame, difficultyLevel: e.target.value })}
+                                required
+                            />
+                        </label>
+                        <label>
+                            Players:
+                            <input
+                                type="number"
+                                value={newGame.players}
+                                onChange={(e) => setNewGame({ ...newGame, players: parseInt(e.target.value, 10) })}
+                                required
+                            />
+                        </label>
+                        <label>
+                            Board Game Arena Rating:
+                            <input
+                                type="number"
+                                step="0.1"
+                                value={newGame.boardGameArenaRating}
+                                onChange={(e) => setNewGame({ ...newGame, boardGameArenaRating: parseFloat(e.target.value) })}
+                                required
+                            />
+                        </label>
+                        <label>
+                            Play Style:
+                            <input
+                                type="text"
+                                value={newGame.playStyle}
+                                onChange={(e) => setNewGame({ ...newGame, playStyle: e.target.value })}
+                                required
+                            />
+                        </label>
+                        <button type="submit" className="submit-button">Add Game</button>
+                        <button
+                            type="button"
+                            onClick={() => setShowAddGameForm(false)}
+                            className="cancel-button"
+                        >
+                            Cancel
+                        </button>
+                    </form>
+                </div>
+            )}
 
             {/* Filters */}
             <div className="filters">
@@ -93,7 +202,6 @@ function CatalogPage() {
                             </h3>
                             <p>Genre: {game.genre}</p>
                             <p>Difficulty Level: {game.difficultyLevel}</p>
-                            <p>Play Style: {game.playStyle}</p>
                             <p>Players: {game.players}</p>
                             <p>Rating: {game.boardGameArenaRating}</p>
                             <button onClick={() => addToCollection(game.gameId)} className="save-button">

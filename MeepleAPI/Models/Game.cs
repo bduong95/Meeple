@@ -6,7 +6,7 @@ namespace MeepleAPI.Models
     public class Game
     {
         [DynamoDBHashKey] // Mark GameId as the partition key
-        public string GameId { get; set; }
+        public string GameId { get; set; } = Guid.NewGuid().ToString();
 
         public string Name { get; set; }
         public string Genre { get; set; }

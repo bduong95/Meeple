@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h1V7rYRlv9E=",
+  "dgSpecHash": "tcaPsMBJG+w=",
   "success": true,
-  "projectFilePath": "C:\\Users\\kdoc_\\Documents\\Centennial\\Sem 9\\API Engineering\\Meeple\\MeepleAPI\\MeepleAPI.csproj",
+  "projectFilePath": "C:\\Users\\kdoc_\\Documents\\Centennial\\Sem 9\\API Engineering\\Meeple-latest\\MeepleAPI\\MeepleAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kdoc_\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\kdoc_\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

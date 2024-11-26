@@ -980,11 +980,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kdoc_\\Documents\\Centennial\\Sem 9\\API Engineering\\Meeple\\MeepleAPI\\MeepleAPI.csproj",
+      "projectUniqueName": "C:\\Users\\kdoc_\\Documents\\Centennial\\Sem 9\\API Engineering\\Meeple-latest\\MeepleAPI\\MeepleAPI.csproj",
       "projectName": "MeepleAPI",
-      "projectPath": "C:\\Users\\kdoc_\\Documents\\Centennial\\Sem 9\\API Engineering\\Meeple\\MeepleAPI\\MeepleAPI.csproj",
+      "projectPath": "C:\\Users\\kdoc_\\Documents\\Centennial\\Sem 9\\API Engineering\\Meeple-latest\\MeepleAPI\\MeepleAPI.csproj",
       "packagesPath": "C:\\Users\\kdoc_\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kdoc_\\Documents\\Centennial\\Sem 9\\API Engineering\\Meeple\\MeepleAPI\\obj\\",
+      "outputPath": "C:\\Users\\kdoc_\\Documents\\Centennial\\Sem 9\\API Engineering\\Meeple-latest\\MeepleAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
