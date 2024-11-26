@@ -1,27 +1,36 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import axios from 'axios';
-import '../styles/LoginPage.css'; // Import the CSS file
+import { useNavigate } from 'react-router-dom';
+import { AuthContext } from '../context/AuthContext'; // Import AuthContext
+import '../styles/LoginPage.css';
 
 function LoginPage() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const navigate = useNavigate();
+  const { login } = useContext(AuthContext); // Use context
 
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      // Replace with your backend login API URL
       const response = await axios.post('https://localhost:7263/api/users/login', {
         email,
         password,
       });
 
-      // Handle success (e.g., save token to localStorage)
-      localStorage.setItem('token', response.data.token);
+      // Save user-related data in localStorage
+      localStorage.setItem('token', response.data.token || '');
+      localStorage.setItem('userId', response.data.userId);
+
+      // Update global state
+      login(response.data.userId);
+
       setError('');
       alert('Login successful!');
+      navigate('/collection'); // Redirect to CollectionPage
     } catch (err) {
-      // Handle error (e.g., incorrect credentials)
+      console.error('Login error:', err);
       setError('Invalid email or password');
     }
   };

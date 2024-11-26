@@ -10,7 +10,7 @@ function CatalogPage() {
     const [genre, setGenre] = useState('');
     const [difficultyLevel, setDifficultyLevel] = useState('');
     const [sortBy, setSortBy] = useState('');
-    const [userId] = useState('U001');
+    const userId = localStorage.getItem('userId'); // Get userId from localStorage
 
     useEffect(() => {
         const fetchGames = async () => {
@@ -30,6 +30,11 @@ function CatalogPage() {
     }, [genre, difficultyLevel, sortBy]);
 
     const addToCollection = async (gameId) => {
+        if (!userId) {
+            alert('You must be logged in to add games to your collection.');
+            return;
+        }
+
         try {
             await axios.post(`https://localhost:7263/api/collections/${userId}/add/${gameId}`);
             alert('Game added to your collection!');
